@@ -2135,7 +2135,7 @@ hr {
 body {
   background-color: white;
   background: #fff;
-  background: url(/images/code-bg.png);
+  background: url(../images/code-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
