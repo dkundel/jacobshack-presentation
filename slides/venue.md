@@ -1,7 +1,7 @@
 ##  Venue
 
 ```coffeescript
-class IRC extends Building
+class CampusCenter extends Building
   @run: () ->
     "Presentations and some space to hack :)"
   @hack: () ->

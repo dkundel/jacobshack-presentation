@@ -1,3 +1,3 @@
 ##  2. Code Reviews
 
-This is a new Markdown slide
+![Code Review](images/code_quality_review.jpg)

@@ -1,3 +1,6 @@
-##  5.+6. Team Registration & Submission
+##  5. + 6. 
+### Team Registration & Submission
 
-This is a new Markdown slide
+Register at:
+
+[http://hackathon.io/jacobshack-fall](http://hackathon.io/jacobshack-fall)

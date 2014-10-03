@@ -6,14 +6,31 @@
     ],
     "venue.md",
     [
-      "rules.md",
-      "1-fresh-code.md",
-      "2-code-reviews.md",
-      "3-team-size.md",
-      "4-shirts-and-badges.md",
-      "5-team-registration-submission.md",
-      "6-ownership.md",
-      "8-demo-your-hack.md",
-      "9-disqualification.md"
-    ]
+        "rules.md",
+        "1-fresh-code.md",
+        "2-code-reviews.md",
+        "3-team-size.md",
+        "4-shirts-and-badges.md",
+        "5-team-registration-submission.md",
+        "6-ownership.md",
+        "8-demo-your-hack.md",
+        "9-disqualification.md",
+        "detailed-rules.md"
+    ],
+    [
+        "more-information.md",
+        "torrents.md",
+        "pfand.md",
+        "food.md",
+        "sleep.md",
+        "tweeting.md",
+        "alcoholic-drinks.md",
+        "presentations.md"
+    ],
+    [
+        "prizes.md",
+        "main-prizes.md",
+        "sponsor-prizes.md"
+    ],
+    "happy-hacking.md"
 ]
