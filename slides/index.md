@@ -1,15 +1,10 @@
-<h2>Welcome to</h2>
-<img class="jh-logo-title" src="images/jacobsHack_logo_hq.png">
-<h1><span class="jacobsHackLogo">jacobs<i>Hack</i></span></h1>
-<h3 class="jh-thin">FALL 2014</h3>
+<h3>Hacker School Bremen</h3>
+<h2>Spiele Programmieren in</h2>
+<img class="html5-front-logo" src="images/html5-oval.png" alt="HTML5">
 <p>
-<small>
-<a href="https://twitter.com/dkundel" target="_blank">@dkundel</a>
-&nbsp;&nbsp;
-<a href="https://twitter.com/jacobs_hack" target="_blank">@jacobs_hack</a>
+<a href="https://twitter.com/dkundel" target="_blank">Dominik Kundel (@dkundel)</a>
 <br>
-<a href="https://twitter.com/hashtag/jacobshack" target="_blank">#jacobshack</a>
-&nbsp;&nbsp;
-<a href="https://twitter.com/hashtag/hackstrong" target="_blank">#hackstrong</a>
-</small>
+<a href="https://twitter.com/naomi_pen" target="_blank">Naomi Pentrel (@naomi_pen)</a>
+<br>
+<a href="https://twitter.com/tkw01536" target="_blank">Tom Wiesing (@tkw01536)</a>
 </p>
