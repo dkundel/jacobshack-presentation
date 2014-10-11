@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>How to code a browser game - Hacker School</title>
+        <title>JacobsHack!</title>
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,6 +37,9 @@
 
     <body>
         <div class="reveal">
+            <div class="hover-countdown jh-thin">
+                <h3>Hack In <span id="countdown"></span></h3>
+            </div>
 
             <div class="slides">
 
@@ -50,32 +53,159 @@
                     
                 
                     
+                    
+                        <section>
+                            
+                                
+    <section data-markdown="slides/thank-you.md"></section>
+
+
+                            
+                                
+    <section data-html="slides/sponsors.html"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
                         
-    <section data-markdown="slides/ueber-uns.md"></section>
+    <section data-markdown="slides/venue.md"></section>
 
 
                     
                     
                 
                     
-                        
-    <section data-markdown="slides/ziel.md"></section>
-
-
                     
+                        <section>
+                            
+                                
+    <section data-markdown="slides/rules.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/1-fresh-code.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/2-code-reviews.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/3-team-size.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/4-shirts-and-badges.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/5-team-registration-submission.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/6-ownership.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/8-demo-your-hack.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/9-disqualification.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/detailed-rules.md"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-markdown="slides/more-information.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/torrents.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/pfand.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/food.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/sleep.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/tweeting.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/alcoholic-drinks.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/presentations.md"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-markdown="slides/prizes.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/main-prizes.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/sponsor-prizes.md"></section>
+
+
+                            
+                        </section>
                     
                 
                     
                         
-    <section data-markdown="slides/tools.md"></section>
-
-
-                    
-                    
-                
-                    
-                        
-    <section data-markdown="slides/talk-is-cheap-show-me-the-code.md"></section>
+    <section data-markdown="slides/happy-hacking.md"></section>
 
 
                     
@@ -85,10 +215,48 @@
 
         </div>
 
+        <a class="jh-bottom-logo" href="https://jacobshack.com/" target="_blank"><img src="images/jacobsHack_logo_hq.png"></a>
+
         <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
         <script src="bower_components/reveal.js/js/reveal.min.js"></script>
         <script src="bower_components/moment/min/moment.min.js"></script>
         <script>
+            countdown();
+            setInterval(countdown, 1000);
+            function countdown () {
+                var now = moment(), // get the current moment
+                // May 28, 2013 @ 12:00AM
+                then = moment([2014, 9, 4, 11, 30]),
+                // get the difference from now to then in ms
+                ms = then.diff(now, 'milliseconds', true);
+                // If you need years, uncomment this line and make sure you add it to the concatonated phrase
+                /*
+                years = Math.floor(moment.duration(ms).asYears());
+                then = then.subtract('years', years);
+                */
+                hours = Math.floor(moment.duration(ms).asHours());
+                // console.log('then', then, 'now', now, 'ms', ms, 'hours', hours)
+             
+                then = then.subtract('hours', hours);
+                // update the duration in ms
+                ms = then.diff(now, 'milliseconds', true);
+                minutes = Math.floor(moment.duration(ms).asMinutes());
+             
+                then = then.subtract('minutes', minutes);
+                // update the duration in ms
+                ms = then.diff(now, 'milliseconds', true);
+                seconds = Math.floor(moment.duration(ms).asSeconds());
+                
+                diffText = '<span class="timeVal hours">';
+                diffText += hours;
+                diffText += '</span>:<span class="timeVal minutes">';
+                diffText += minutes;
+                diffText += '</span>:<span class="timeVal seconds">';
+                diffText += seconds;
+                diffText += '</span>';
+                document.getElementById('countdown').innerHTML = diffText;
+            }
+
             // Configure Reveal
             // Full list of configuration options available here:
             // https://github.com/hakimel/reveal.js#configuration
