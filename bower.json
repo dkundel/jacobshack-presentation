@@ -1,0 +1,9 @@
+{
+  "name": "jacobshack",
+  "version": "0.0.0",
+  "dependencies": {
+    "reveal.js": "~2.6.1",
+    "bootstrap-sass-official": "~3.2.0+2",
+    "moment": "~2.8.3"
+  }
+}

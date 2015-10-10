@@ -1,0 +1,211 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+// This file has been copied over from
+// ../../bower_components/reveal.js/css/theme/source/default.scss
+
+// Core variables and mixins
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/normalize";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/print";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/glyphicons";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/scaffolding";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+
+// Default mixins and settings -----------------
+@import "../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+.reveal div.container {
+  @extends .container
+}
+
+.reveal div.container-fluid {
+  @extends .container-fluid
+}
+
+.reveal div.row {
+  @extends .row
+}
+
+.reveal {
+  @include make-grid-columns();  
+  @include make-grid(xs);
+  .img-responsive {
+    @include img-responsive();
+  }
+}
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+  .reveal {
+    @include make-grid(sm);
+  }
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+  .reveal {
+    @include make-grid(md);
+    .col-md-offset-special {
+      margin-left: 37.5%;
+    }
+  }
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-lg-min) {
+  .reveal {
+    @include make-grid(lg);
+  }
+}
+
+// Include theme-specific fonts ----------------
+@font-face {
+        font-family: 'League Gothic';
+        src: url('../../lib/font/league_gothic-webfont.eot');
+        src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+                 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+                 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+        font-weight: normal;
+        font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic);
+// ---------------------------------------------
+
+$jacobsHackBlue: #07457b;
+
+// Override theme settings ---------------------
+// $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+// Other options include e.g.
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainColor: #000;
+$linkColor: $jacobsHackBlue;
+$linkColorHover: darken($jacobsHackBlue, 10%);
+$headingFont: 'Source Sans Pro', sans-serif;
+$headingTextShadow: none;
+$headingColor: $jacobsHackBlue;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+// $selectionBackgroundColor: #e0ad52;
+// $mainFontSize: 30px;
+// See ../../bower_components/reveal.js/css/theme/template/settings.scss for the full list.
+// ---------------------------------------------
+
+.jacobsHackLogo {
+  color: #000;
+  font-weight: 600 !important;
+  i {
+    color: $jacobsHackBlue;
+    &::after {
+      content: '!';
+      color: #000;
+    }
+  }
+}
+
+.jh-thin {
+  font-weight: 300 !important;
+}
+
+.jh-bottom-logo {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  margin-left: -60px;
+  img {
+    width: 120px;
+  }
+}
+
+.jh-logo-title {
+  width: 25%;
+}
+
+.sponsor-logo {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sap-logo {
+  padding: 0 15% !important;
+}
+
+.sponsor-margin {
+  margin-bottom: 35px;
+}
+
+.reveal {
+  .magin-jacobs-sponsor {
+    .lead {
+      margin-bottom: 0;
+    }
+    margin-bottom: 3rem;
+  }
+  .hover-countdown {
+    text-align: center;
+    #countdown {
+      .timeVal {
+        color: #A62A2A !important;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+// Background generator ------------------------
+@mixin bodyBackground() {
+  background: #fff;
+
+  background: url(../images/code-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  // background: url(images/code-bg.svg);
+  // background-size: 100px 82px;
+        // @include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+}
+// ---------------------------------------------
+
+$backgroundColor: #fff;
+
+// Theme template ------------------------------
+@import "theme-basis.scss";
+// ---------------------------------------------
+
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin: auto;
+}
+
+// See ../../bower_components/reveal.js/css/theme/README.md
+// for further explanations on how reveal.js themes work.
