@@ -258,7 +258,6 @@ th {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
   src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -883,14 +882,14 @@ th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: white; }
+  background-color: #fff; }
 
 input,
 button,
@@ -929,8 +928,8 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: white;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -2084,7 +2083,6 @@ hr {
   src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .jacobsHackLogo {
   color: #000;
   font-weight: 600 !important; }
@@ -2133,7 +2131,7 @@ hr {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-color: white;
+  background-color: #fff;
   background: #fff;
   background: url(../images/code-bg.png);
   background-size: cover;
@@ -2146,11 +2144,11 @@ body {
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: black; }
+  color: #000; }
 
 ::selection {
-  color: white;
-  background: #ff5e99;
+  color: #fff;
+  background: #FF5E99;
   text-shadow: none; }
 
 /*********************************************
@@ -2200,7 +2198,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid black;
+  border: 4px solid #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -2269,3 +2267,5 @@ body {
   background: none;
   box-shadow: none;
   margin: auto; }
+
+/*# sourceMappingURL=theme.css.map */

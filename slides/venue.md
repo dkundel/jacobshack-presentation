@@ -7,7 +7,7 @@ class CampusCenter extends Building
   @hack: () ->
     "Find enough space to get hacky"
   @eat: () ->
-    "Find food and drinks to bring yourself through the next 24h"
+    "Find food and drinks to get yourself through the next 24h"
   @sleep: () ->
     "Find some rest"
   @listen: () ->

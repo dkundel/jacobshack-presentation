@@ -1,3 +1,3 @@
-##  4. Shirts And Badges
+##  4. Wristbands And Badges
 
 ![Wear Shirt](images/wear-shirt.jpg)

@@ -1,5 +1,3 @@
-##  Sponsor Prizes
+## Educational Prize
 
-Entrepreneur First: 250 Euro
-
-Google: Chromecasts
+- 3D Printing Pens
