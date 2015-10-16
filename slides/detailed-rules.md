@@ -1,3 +1,3 @@
 ##  Detailed Rules
 
-[http://hackathon.io/jacobshack-fall/rules](http://hackathon.io/jacobshack-fall/rules)
+[http://jacobshack-2015.devpost.com/rules](http://jacobshack-2015.devpost.com/rules)
