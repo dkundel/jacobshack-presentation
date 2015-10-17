@@ -1,7 +1,9 @@
 ##  Presentations
 
-14:00> Why Start A Startup?
+14:00> Braintree/PayPal API
 
-15:00> Using Azure Mobile Services for your Apps.
+15:00> Angular.JS by Google
 
-16:00> Introduction to Maps Api for Web.
+16:00> CI Awesomeness by Bloomberg
+
+17:00> Node.JS on Microsoft Azure
